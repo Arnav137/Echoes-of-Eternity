@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="100" tileheight="100" infinite="0" nextlayerid="7" nextobjectid="26">
+ <tileset firstgid="1" source="TX Tileset Stone Ground.tsx"/>
+ <tileset firstgid="257" source="grey counter.tsx"/>
+ <tileset firstgid="266" source="furniture.tsx"/>
+ <layer id="1" name="ground" width="10" height="10">
+  <data encoding="csv">
+1,6,1,3,3,3,3,8,7,6,
+33,54,81,114,57,178,179,86,23,70,
+65,46,3,6,49,54,1,98,41,70,
+81,83,85,86,49,54,81,82,83,86,
+1,99,99,99,41,106,3,3,3,6,
+81,83,83,83,57,58,83,83,83,86,
+1,3,3,6,49,54,1,2,2,6,
+65,35,35,54,49,54,49,163,35,70,
+65,35,163,54,49,54,49,35,35,70,
+81,83,83,86,81,86,81,84,84,120
+</data>
+ </layer>
+ <objectgroup id="3" name="entities">
+  <object id="1" name="Player" x="491" y="944.333">
+   <properties>
+    <property name="direction" value="up"/>
+    <property name="pos" value="world"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="ShopNPC" x="464" y="20.1667">
+   <properties>
+    <property name="name_" value="shop1_npc1"/>
+    <property name="pos" value="town1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="NPCinteract" x="419.5" y="200.5" width="159.5" height="61.5">
+   <properties>
+    <property name="name_" value="shop1_npc1"/>
+    <property name="pos" value="shop1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="transit">
+  <object id="12" name="world transit" x="394" y="978" width="215" height="6">
+   <properties>
+    <property name="pos" value="shop"/>
+    <property name="target" value="world"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="collisions">
+  <object id="14" x="990.667" y="8" width="73.3333" height="1060"/>
+  <object id="15" x="1.33333" y="1001.33" width="1054.67" height="57.3333"/>
+  <object id="16" x="-8" y="-5.33333" width="22.6667" height="1060"/>
+  <object id="17" x="-1.33333" y="-24" width="1065.33" height="28"/>
+  <object id="18" x="874.667" y="732" width="77.3333" height="74.6667"/>
+  <object id="19" x="188" y="624" width="66.6667" height="68"/>
+  <object id="20" x="188" y="786.667" width="64" height="65.3333"/>
+  <object id="21" x="665" y="721.333" width="200.667" height="105"/>
+  <object id="22" x="17.3333" y="4" width="181.333" height="142.667"/>
+  <object id="23" x="793.333" y="2.66667" width="193.333" height="153.333"/>
+ </objectgroup>
+ <objectgroup id="4" name="objects">
+  <object id="6" gid="267" x="665.667" y="823.333" width="200" height="100"/>
+  <object id="7" gid="266" x="866" y="821" width="100" height="100"/>
+  <object id="10" gid="266" x="171" y="770" width="100" height="100" rotation="90"/>
+  <object id="11" gid="266" x="271" y="706" width="100" height="100" rotation="-90"/>
+ </objectgroup>
+ <layer id="2" name="table" width="10" height="10">
+  <data encoding="csv">
+0,0,260,0,0,0,0,262,0,0,
+0,0,263,264,264,264,264,265,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+257,258,258,259,0,0,257,258,258,259
+</data>
+ </layer>
+</map>
